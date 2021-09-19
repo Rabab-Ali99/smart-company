@@ -1,0 +1,890 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&family=Markazi+Text:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);
+
+
+.container-fluid.outside{
+  padding: 0;
+
+    .container-fluid{
+    font-size: 18px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    
+    flex-direction: row-reverse;
+  }
+
+  .navbar-toggler-icon{
+    background-image: url(../src/images/drop-down-menu.png);
+  }
+
+  .navbar-collapse,.navbar-nav{
+    text-align: right;
+  }
+
+  .signin-btn a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .signin-btn{
+    all: unset;
+  }
+  .navbar-brand{
+      img{
+        width: 90px;
+        height: 23px;
+    }
+  }
+  .nav-link{
+    color: white;
+  }
+  .active{
+    color: #e4b32b;
+  }
+}
+
+.container-fluid.abstract{
+  background-image: linear-gradient( to top ,rgba(0, 0, 0, 0.877),rgba(0, 0, 0, 0.877)),url(../src/images/collection-of-smartphones-and-tablets-with-different-screens.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+
+  .container.abstract-info{
+    padding : 3.5em 1em;
+    width: 50vw;
+
+    .what-can-we-provid{
+      font-family: 'Markazi Text', serif;
+      font-size: 19px;
+      letter-spacing: .04ch;
+      line-height: 2em;
+
+      span{
+        color: #daab2a;
+      }
+    }
+
+    .buttons-container{
+      gap: 20px;
+
+      a{
+        text-decoration: none;
+        color:white;
+      }
+      
+      .our-products,.about-us{
+        font-family: 'Markazi Text', serif;
+        font-size: 16px;
+        width: 140px;
+        height: 42px;
+        border-radius: .2em;
+        border: 1px none ;
+      }
+      .about-us{
+        background-color: #046e47;
+      }
+      .our-products{
+        background-color: #c59104;
+      }
+
+      .our-products:hover{
+        background-color: #af8616;
+        cursor: pointer;
+      }
+
+      .about-us:hover{
+        background-color: #046240;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.container-fluid.middle-section{
+  padding: 2em 0;
+.container.mid{
+   padding: .5em 1em;
+      .section-head{
+        
+          h3{ 
+            font-family: 'IBM Plex Sans Arabic', sans-serif;
+            font-size: 16px;
+            color: rgb(51, 49, 49);
+              span{
+                position: relative;
+                &::after{
+                content: "";
+                width: 100%;
+                height: 8px;
+                background-color: #be7909 ;
+                position: absolute;
+                right: 0;
+                top: -10px;
+              }
+            }
+          }
+          
+          p{
+            font-family: 'Markazi Text', serif;        
+            font-weight: medium;   
+            font-size: 17px;
+            line-height: 1.7em;
+            color: rgb(54, 52, 52);       
+          }
+      }
+
+      .container{
+        display: grid;
+        gap: 13px;
+          .column{
+            padding: 1em;
+            color: black;
+            border-radius :.5em;
+            background-color: white;
+            box-shadow: 0px 15px 10px rgba(0,0,0,0.15);
+            transition: 0.25s ease box-shadow,0.25s ease transform;
+            &:hover{
+              box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 0.3);
+              transform: scale(0.985);
+              cursor:context-menu;
+            }
+
+            h3{
+              font-family: 'IBM Plex Sans Arabic', sans-serif;
+              font-size: 14px;
+              font-weight: bold;
+              margin: 1em 0 .5em;
+              color: rgb(51, 49, 49);
+            }
+
+            img{
+              width: 60px;
+              height: 55px;
+            }
+
+            p{
+              font-family: 'Markazi Text', serif;        
+              color: rgb(85, 81, 81);
+              font-size: 17px;
+              margin-bottom: 0;
+              line-height: 1.3em;
+            }
+        } 
+      }
+    }
+  }
+
+
+  .container-fluid.payments{      
+    background-image: linear-gradient(to top ,rgba(0, 0, 0, 0.753),rgba(0, 0, 0, 0.753)),url('../src/images/computer-keyboard-sale-for-phone.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    padding: 1em;
+    .container.payment{ 
+
+      span{
+        position: relative;
+        &::after{
+          content: "";
+          width: 100%;
+          height: 4px;
+          background-color: #be7909 ;
+          position: absolute;
+          bottom: -4px;
+          left: 0;
+        }
+      }
+
+      p {
+        font-family: 'Markazi Text', serif;
+      font-size: 17px;
+      line-height: 1.7em;
+      font-weight: normal;
+      letter-spacing: .03ch;
+        }
+      }
+    }
+
+
+  .container-fluid.news{
+    .container.new{
+      .header{
+        h3{
+          font-family: 'IBM Plex Sans Arabic', sans-serif;
+          font-size: 16px;    
+          margin: 1.5em  0 .7em;
+          color: rgb(51, 49, 49);
+          span{ 
+            position: relative;
+            &::after{
+              content: "";
+              width: 100%;
+              height: 5px;
+              background-color: #be7909 ;
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+          }
+          }
+          
+      }      
+        .description{
+          font-family: 'Markazi Text', serif;        
+          font-size: 17px;
+          line-height: 1.7em;
+          color: rgb(85, 81, 81);
+          margin-bottom: 0;
+        }
+      }
+
+      .container.new2{
+           .scroll-direction{
+        .reports-container{
+          
+          
+          .report {
+            position: relative;
+            border-radius: .5em;
+            overflow: hidden;
+            width: 150px !important;
+            height: 120px;
+            padding: .5em;
+
+              img{
+                border-radius: .5em;
+                width: 100%;
+                height: 100%;
+              }
+        
+              .report-about{
+                position: absolute;
+                bottom: 0;
+                h3{
+                  border-radius: .5em;
+                  font-family: 'Markazi Text', serif;        
+                  color: white;
+                  font-size: 14px;
+                  padding: 1.5em .2em 1em;
+                  margin: 0;
+                  background: linear-gradient(to bottom, 
+                  rgba(0,0,0,0), 
+                  rgba(0, 0, 0, 0.55) 30%,   
+                  rgba(0, 0, 0,.95));
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+  .container-fluid.footer{
+       background-color: #f8f9fa; 
+       padding: 0; 
+    .footer-left{
+      background-color: #be7909;
+      font-family: 'Markazi Text', serif;        
+      text-align: center;
+      padding: 1em 0;
+
+    .footer-links{
+      font-size: 20px;
+    }
+
+    .footer-company-name{
+      margin: 0;
+      color:  #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .footer-links a{
+      padding-left: 9px;
+      display:inline-block;
+      line-height: 1.8;
+      text-decoration: none;
+      color:  inherit;
+    }
+
+    .footer-links{
+      color:  #ffffff;
+      padding: 0;
+    }
+  
+   h3 span{
+      color:  #5383d3;
+    }
+
+    }
+    .footer-distributed{
+      padding: 2em 1em .2em;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+      font-family: 'Markazi Text', serif;        
+      
+  
+      h3 img{
+        display: none;
+        width: 100px;
+        height: 30px;
+        margin:  0 0 1em 0 ;
+      }
+
+
+
+    
+    .footer-center{
+      display: none;
+      margin: 1.5em 0;
+      text-align: right;
+      i{
+      color:  #494d50;
+      margin: 10px 10px;
+      vertical-align: middle;
+    }   
+
+   i.fa-envelope{
+      font-size: 17px;
+      line-height: 38px;
+    }
+
+p{
+      display: inline-block;
+      color:  #494d50;
+      vertical-align: middle;
+      font-size:20px;
+      margin:0;
+      line-height: .5em;
+    }
+
+ 
+    p span{
+      line-height: 2em;
+      display:block;
+      font-size: 20px;
+    }
+
+.number {
+      text-align: right;
+    }
+
+
+ .number p{
+      color:  #75787a;
+      margin: 20px 0 23px;
+    }
+
+
+    img{
+      width: 20px;
+      height: 20px;
+    }
+ 
+     p a{
+      color:  #d19c21;
+      text-decoration: none;;
+    }
+
+
+    }
+    
+ 
+  .footer-right{
+    margin-bottom: 2em;
+    .footer-company-about{
+      text-align: right;
+      margin-bottom: 6px;
+    span{
+          color:  #494d50;
+          font-size: 20px;
+          font-weight: bold;
+          position: relative;
+          &::after{
+            content: "";
+            width: 100%;
+            height: 3px;
+            background-color: #be7909 ;
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+        }
+        }
+      }
+
+      .inside{
+        text-align: right;
+        color:  #75787a;
+        font-size: 20px;
+        line-height: 1.5em;
+        margin: 0;
+      }
+
+ .footer-icons{
+      text-align: right;
+      margin-top: 10px;
+        a{
+            display: inline-block;
+            width: 30px;
+            height: 34px;
+            cursor: pointer;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+          
+            margin-right: 3px;
+          }
+          a i img{
+            width: 25px;
+            height: 26px;
+          }
+        }
+     } 
+    }
+  }
+
+@media (width:768px) {
+  .container-fluid.middle-section{
+  .container.mid{
+    .container{
+      grid-template-columns: repeat(4,auto);
+      gap: 1em;
+      }
+    }
+  }
+  .container-fluid.footer{
+    .footer-distributed{
+      .row{
+        justify-content: space-around;
+        .footer-center{
+          display: block;
+          font-size: 20px;}
+          .footer-right{
+            margin-bottom: 2em;
+            .footer-company-about{
+            margin: 1em 0 6px;
+            }
+          }
+        
+      }
+    }
+  }
+}
+
+@media (min-width: 992px){
+
+  .container-fluid.outside{
+
+    .container-fluid{
+      font-size: 1.1em;
+      gap:9rem;   
+      padding: 1em 2em 0 ;
+    }
+    .navbar-nav{
+      flex-direction: row-reverse;
+      align-self: center;
+    }
+
+    .navbar-collapse{
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+    }
+
+    .signin-btn{
+        a{
+          color: white;
+        }
+        padding: .5em 1.2em;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: .2em;
+        &:hover{
+          cursor: pointer;
+          a{
+            color: #daab2a;
+          }
+        }
+    }
+    .navbar-brand{
+      img{
+        width: 113px;
+        height: 30px;
+    }
+  }
+    a.nav-link{
+      color: white;
+      &:hover{
+        color: #daab2a;
+      }
+  }
+  .nav-link.active{
+    color: #daab2a;
+  }
+}
+
+  .container-fluid.abstract {
+      .container.abstract-info{
+        padding : 7em 0;
+      .what-can-we-provid{
+        font-size: 1.92em;
+        padding: 0 2em;
+      }
+
+    .buttons-container{
+        .our-products,.about-us{
+        font-size: 1.5em;
+        width: 140px;
+        height: 50px;
+        border-radius: .2em;
+        border: 1px none ;
+        }
+      }
+    }
+  }
+
+  .container-fluid.middle-section{
+    .container.mid{
+       padding: 2em 0;
+          .section-head{
+              h3{
+                font-family: 'IBM Plex Sans Arabic', sans-serif;
+                font-size: 1.65em;
+                color: rgb(51, 49, 49);
+                
+
+                span{
+                  position: relative;
+                    &::after{
+                    content: "";
+                    width: 100%;
+                    height: 8px;
+                    background-color: #be7909 ;
+                    position: absolute;
+                    right: 0;
+                    top: -7px;
+                    }
+                }
+              }
+
+              p{
+                font-family: 'Markazi Text', serif;
+                font-size: 1.55em;
+                margin: .4em 0 .9em;
+                color: rgb(54, 54, 54);       
+              }
+          }
+
+          .container{
+            grid-template-columns: repeat(4,auto);
+            gap: 1.5em;
+
+              .column{
+                padding: 1.5em 1em 1em ;
+
+                img{
+                  width: 70px;
+                  height: 70px;
+                }
+                h3{
+                  font-family: 'IBM Plex Sans Arabic', sans-serif;
+                  color: black;
+                  margin: 1em 0;
+                  font-size: 1.1em;
+                }
+                p{
+                  font-family: 'Markazi Text', serif;
+                  color: rgb(85, 81, 81);
+                  font-size: 1.3em;
+                  line-height: 1.4em;
+                }
+              }
+          }
+      }
+    }
+
+    .container-fluid.payments{    
+    .container.payment{ 
+      padding: 3em 0;
+      span{
+        &::after{
+          height: 8px;
+          bottom: -8px;
+        }
+      }
+      
+      p{
+        font-size: 1.55em;
+        }
+      }
+    }
+
+    .container-fluid.news{
+      padding: 0 3em;
+      .container.new{   
+        .header{
+          h3{
+            font-size: 1.5em;
+          }
+
+          .description{
+            font-size: 1.7em;
+          }
+        }
+
+        .container.new2{
+       
+          .scroll-direction{
+            position: relative;
+
+            .btn {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-60%);
+              width: 3rem;
+              height: 3rem;
+              border-radius: 50%;
+              background-position :50% 50%;
+              background-color: rgb(255, 255, 255);
+              background-repeat: no-repeat;
+              z-index: 1;
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;     }
+              
+            .btn:hover{
+              cursor: pointer;
+            }
+            .btn.next {
+              background-image: url('../src/images/right-arrow.png');
+              background-size: 22px 22px;
+              right: -5em;
+            }
+            
+            .btn.prev {
+              background-image: url('../src/images/left-arrow.png');
+              background-size: 22px 22px;
+              left: -5em;
+            }
+    
+            .reports-container{
+              .report {
+                padding: 0;
+                position: relative;
+                border-radius: .5em;
+                overflow: hidden;
+                width: 350px !important;
+                height: 200px;
+                margin: 1.5em .9em;
+    
+                  img{
+                    border-radius: .5em;
+                    width: 100%;
+                    height: 200px;
+                  }
+                      .report-about{
+                          position: absolute;
+                          bottom: 0;
+                          h3{
+                            font-size: 1.3em;
+                            line-height: 1.5em;
+                            color: white;
+                            padding: 1.5em  .9em 1em;
+                            margin: 0;
+                            cursor: pointer;
+                            height: 100%;
+                            background: linear-gradient(to bottom, 
+                            rgba(0,0,0,0), 
+                            rgba(0, 0, 0, 0.55) 30%,   
+                            rgba(0, 0, 0,.95));
+                            }
+                          }
+                        }
+        .slick-current.slick-center{
+        box-shadow: 0px 15px 30px rgba(0,0,0,0.3);
+        transition: 0.25s ease box-shadow,0.25s ease transform;
+        transform: scale(1.08);
+        }
+
+      .report.slick-slide.slick-active:not(.slick-current) {
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+        transition: 0.25s ease box-shadow,0.25s ease transform;
+        transform: scale(0.985);
+        }
+      }
+    }
+  }
+}   
+          
+}
+      
+ 
+    .container-fluid.footer{
+      padding: 0;
+      background-color: #f8f9fa;
+      .footer-left{
+        font-family: 'Markazi Text', serif;        
+        padding: 1.5em 0 1em;
+        background-color: #be7909;
+        text-align: center;
+        .footer-links{
+          font-size: 1.5em;
+        }
+
+        .footer-company-name{
+        margin: 0;
+        color:  #ffffff;
+        font-size: 1.4em;
+        font-weight: bold;
+        }
+    
+        .footer-links a{
+        padding-left: 18px;
+        display:inline-block;
+        line-height: 1.5;
+        text-decoration: none;
+        color:  inherit;
+        }
+    
+        .footer-links{
+        color:  #ffffff;
+        padding: 0;
+        }
+    
+        h3 span{
+        color:  #5383d3;
+        }
+    
+        }
+      
+    .footer-distributed{
+    padding: 2em 1em 1em;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    font-family: 'Markazi Text', serif;        
+    
+
+.row{
+  justify-content: space-around;
+  .footer-center{
+    display: block;
+
+  margin: 1.5em 0;
+  text-align: right;
+  i{
+  background-color:  #efefef;
+  color:  #494d50;
+  margin: 10px 10px;
+  vertical-align: middle;
+  }   
+
+  i.fa-envelope{
+    font-size: 1.5em;
+    line-height: 38px;
+  }
+
+
+  p{
+  display: inline-block;
+  color:  #494d50;
+  font-size: 1.5em;
+  margin:0 0 0 1em;
+  line-height: 2.5em;
+  }
+  p.pp{
+    line-height: 1em;
+    margin:0 0 0 1em;
+
+  }
+
+  p span{
+  display:block;
+  font-size: 24px;
+}
+
+  .number {
+  text-align: right;
+  }
+
+
+  .number p{
+  color:  #75787a;
+  margin: 20px 0 23px;
+  }
+
+
+  img{
+  
+  width: 30px;
+  height: 31px;
+  }
+
+  p a{
+  color:  #d19c21;
+  text-decoration: none;;
+  }
+
+
+  }
+
+  .footer-right{
+    margin-bottom: 2em;
+    .footer-company-about{
+    text-align: right;
+    margin: 1em 0 6px;
+    span{
+        color:  #494d50;
+        font-size: 1.5em;
+        font-weight: bold;
+        position: relative;
+        &::after{
+          content: "";
+          width: 100%;
+          height: 3px;
+          background-color: #be7909 ;
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+       }
+      }
+    }
+
+    .inside{
+      text-align: right;
+      color:  #75787a;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      margin: 0;
+    }
+
+    .footer-icons{
+    text-align: right;
+    margin-top: 10px;
+      a{
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          cursor: pointer;
+          background-color:  #efefef;
+          border-radius: 2px;
+          font-size: 1.5em;
+          color: #ffffff;
+          text-align: center;
+          line-height: 35px;
+          margin-right: 5px;
+        }
+        a i img{
+          width: 40px;
+          height: 40px;
+        }
+      }
+     } 
+    }
+  }
+  }
+}
+
+
+
+  
